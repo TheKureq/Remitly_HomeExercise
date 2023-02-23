@@ -1,1 +1,1 @@
-# Remitly_HomeExercise
+# Solution to Remitly internship Home Exercise
