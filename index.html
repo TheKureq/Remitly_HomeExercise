@@ -7,24 +7,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michal Kurek Solution</title>
   <link href="./dist/css/style.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <nav>
-    <ul>
-      <li>Solution</li>
-      <li>Developer</li>
-    </ul>
-  </nav>
+  <ul>
+    <li>Solution</li>
+    <li>Developer</li>
+  </ul>
+</nav>
 
-  <h1>Home</h1>
+  <main class="main">
+    <section class="containter">
+
+      <div class="calculator">
+        <div class="calculator__background"></div>
+
+        <!-- UNITED KINGDOM BOX -->
+        <div class="calculator__input-Box">
+          <img src="../dist/img/united-kingdom-flag-icon.svg" alt="united kingdom flag small icon">
+          <div class="calculator__input-text">
+            <p>You send</p>
+          </div>
+          <div class="calculator__currency">
+            <p>GBP</p>
+          </div>
+          <div>
+            <input class="calculator__input-value" type="text" id="en">
+          </div>
+        </div>
+
+        <!-- POLAND BOX -->
+        <div class="calculator__input-Box">
+          <img src="../dist/img/poland-flag-icon.svg" alt="Poland flag small icon">
+          <div class="calculator__input-text">
+            <p>They receive</p>
+          </div>
+          <div class="calculator__currency">
+            <p>PLN</p>
+          </div>
+          <div>
+            <input class="calculator__input-value" type="text" id="pl">
+          </div>
+        </div>
+
+        <!-- INFO -->
+        <div class="calculator__exchange-rate">
+          <p>1 GPB = <span class="exchange-rate"></span></p>
+          <p><strong>No transfer fee</strong></p>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
 
   <footer>
-    <p>Footer</p>
-  </footer>
+  <p>Footer</p>
+</footer>
 
   <script src="./dist/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/6f008fc73a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
