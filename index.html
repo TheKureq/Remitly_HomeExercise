@@ -15,51 +15,88 @@
 <body>
 
   <nav>
-  <ul>
-    <li>Solution</li>
-    <li>Developer</li>
-  </ul>
+  <div class="nav">
+    <div class=" nav__trigger"><i class="fa-solid fa-arrow-right"></i></div>
+
+    <div class="nav__dev-info">
+      <img src="./dist/img/Me.jpg" alt="picture of developer who wrote this code">
+
+      <h1>Michał Kurek</h1>
+      <p>I am a novice frontend developer and a third-year student of Automatic control and Robotics with a
+        specialization
+        in
+        Information Technology.</p>
+      <p>I am actively learning programming / frontend development technics, mainly React and Python. I am looking for
+        an
+        internship/job that will allow me to spread my wings in the IT industry. I am open-minded, eager to learn and I
+        feel
+        great both in teamwork and in individual projects</p>
+    </div>
+
+    <div class="nav__techstack">
+      <h2>Tech Stack</h2>
+      <p>HTML, CSS,
+        JavaScript,
+        Sass,
+        Git,
+        Npm, Gulp,
+        Bootstrap,
+        Responsive web design,
+        SEO,
+        BEM,
+        Basic SQL,
+        C++ / C,
+        Contact with OOP,
+        Algorithms,
+        Matlab / Simulink</p>
+    </div>
+
+    <ul class="nav__links">
+      <li><a href="https://github.com/TheKureq"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/micha%C5%82-kurek-a54a471b5/"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/kurek_workshop/"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </div>
 </nav>
 
   <main class="main">
-    <section class="containter">
+    <section class="calculator">
+      <div class="calculator__background"></div>
 
-      <div class="calculator">
-        <div class="calculator__background"></div>
-
-        <!-- UNITED KINGDOM BOX -->
-        <div class="calculator__input-Box">
-          <img src="../dist/img/united-kingdom-flag-icon.svg" alt="united kingdom flag small icon">
-          <div class="calculator__input-text">
-            <p>You send</p>
-          </div>
-          <div class="calculator__currency">
-            <p>GBP</p>
-          </div>
-          <div>
-            <input class="calculator__input-value" type="text" id="en">
-          </div>
+      <!-- UNITED KINGDOM BOX -->
+      <div class="calculator__input-text">
+        <p>You send</p>
+      </div>
+      <div class="calculator__input-Box">
+        <img src="../dist/img/united-kingdom-flag-icon.svg" alt="united kingdom flag small icon">
+        <div>
+          <input class="calculator__input-value" type="text" id="en">
         </div>
-
-        <!-- POLAND BOX -->
-        <div class="calculator__input-Box">
-          <img src="../dist/img/poland-flag-icon.svg" alt="Poland flag small icon">
-          <div class="calculator__input-text">
-            <p>They receive</p>
-          </div>
-          <div class="calculator__currency">
-            <p>PLN</p>
-          </div>
-          <div>
-            <input class="calculator__input-value" type="text" id="pl">
-          </div>
+        <div class="calculator__currency">
+          <p>GBP</p>
         </div>
+      </div>
 
-        <!-- INFO -->
-        <div class="calculator__exchange-rate">
-          <p>1 GPB = <span class="exchange-rate"></span></p>
-          <p><strong>No transfer fee</strong></p>
+      <!-- POLAND BOX -->
+      <div class="calculator__input-text">
+        <p>They receive</p>
+      </div>
+      <div class="calculator__input-Box">
+        <img src="../dist/img/poland-flag-icon.svg" alt="Poland flag small icon">
+        <div>
+          <input class="calculator__input-value" type="text" id="pl">
         </div>
+        <div class="calculator__currency">
+          <p>PLN</p>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="calculator__exchange-rate">
+        <p>1 GBP = <span class="exchange-rate"></span></p>
+        <p><strong>No transfer fee</strong></p>
+      </div>
 
       </div>
 
@@ -67,7 +104,10 @@
   </main>
 
   <footer>
-  <p>Footer</p>
+  <p>Michał Kurek &copy;
+    <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+    | m.kurek200@gmail.com
+  </p>
 </footer>
 
   <script src="./dist/js/main.min.js"></script>
