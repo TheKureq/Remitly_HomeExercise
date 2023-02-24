@@ -34,7 +34,7 @@ body {
 	padding: 3rem;
 	background-color: $bgc-shadow;
 	transform: translateX(-100%);
-	transition: all 0.7s 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 	opacity: 1;
 	z-index: 100;
 
