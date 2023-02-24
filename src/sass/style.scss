@@ -11,13 +11,16 @@ html {
 }
 
 body {
+	position: relative;
 	background-color: $bgc-color;
 	font-family: 'Prompt', sans-serif;
 	color: $font-base-color;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .nav {
-	background-color: $bgc-shadow;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -29,6 +32,8 @@ body {
 	height: auto;
 	min-height: 100vh;
 	padding: 3rem;
+	background-color: $bgc-shadow;
+	opacity: 1;
 	// transform: translateX(-100%);
 	z-index: 100;
 
@@ -38,7 +43,7 @@ body {
 		height: auto;
 		font-size: 1.2rem;
 
-		h1 {
+		h2 {
 			font-size: 2.4rem;
 		}
 
@@ -47,9 +52,8 @@ body {
 		}
 
 		img {
-			width: 100%;
-			object-fit: cover;
-			border-radius: 0.5rem;
+			position: absolute;
+			display: none;
 		}
 	}
 
@@ -90,15 +94,18 @@ body {
 		justify-content: center;
 		align-items: center;
 		right: 0;
+		bottom: -2%;
 		background-color: $bgc-shadow;
 		width: 12.8rem;
 		height: 12.8rem;
-		transform: translateX(50%);
+		transform: translate(50%, -50%) rotate(180deg); // if nav closed 0deg, else 180deg
 		border-radius: 50%;
 		font-size: 4rem;
+		z-index: -1;
 
 		i {
-			margin-left: 5rem;
+			margin-left: 0rem; // if nav closed 4rem, else 0rem
+			margin-right: 4rem; // if nav opened 4rem, else 0rem
 		}
 
 		&:hover {
@@ -109,11 +116,33 @@ body {
 	}
 }
 
+.hero {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	top: 0;
+	height: 50vh;
+	width: 100vw;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(63deg, rgba(2, 0, 36, 1) 0%, rgba(33, 46, 97, 1) 35%, rgba(174, 202, 255, 1) 100%);
+	z-index: -1;
+
+	h1 {
+		position: absolute;
+		top: 25%;
+		font-size: 3rem;
+		color: $font-base-color;
+		margin-bottom: 3rem;
+	}
+}
+
 .main {
 	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	height: 100vh;
 	width: 100vw;
 
@@ -192,13 +221,35 @@ footer {
 	font-size: 1.2rem;
 }
 
+@media (min-width: 567px) {
+	.hero {
+		h1 {
+			top: 50%;
+			font-size: 3.6rem;
+		}
+	}
+}
+
+@media (min-height: 850px) {
+	.nav {
+		img {
+			display: block;
+			position: relative;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 0.5rem;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
 @keyframes bounce {
 	0% {
 		transform: translateX(-48px);
 		opacity: 0;
 	}
 	40% {
-		transform: translateX(-26px);
+		transform: translateX(-20px);
 		opacity: 1;
 	}
 	65% {
