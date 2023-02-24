@@ -33,8 +33,9 @@ body {
 	min-height: 100vh;
 	padding: 3rem;
 	background-color: $bgc-shadow;
+	transform: translateX(-100%);
+	transition: all 0.7s 0.1s cubic-bezier(0.19, 1, 0.22, 1);
 	opacity: 1;
-	// transform: translateX(-100%);
 	z-index: 100;
 
 	&__dev-info {
@@ -98,14 +99,15 @@ body {
 		background-color: $bgc-shadow;
 		width: 12.8rem;
 		height: 12.8rem;
-		transform: translate(50%, -50%) rotate(180deg); // if nav closed 0deg, else 180deg
+		transform: translate(50%, -50%) rotate(0deg); // if nav closed 0deg, else 180deg
 		border-radius: 50%;
 		font-size: 4rem;
 		z-index: -1;
 
 		i {
-			margin-left: 0rem; // if nav closed 4rem, else 0rem
-			margin-right: 4rem; // if nav opened 4rem, else 0rem
+			margin-left: 5rem; // if nav closed 5rem, else 0rem
+			margin-right: 0rem; // if nav opened 4rem, else 0rem
+			transition: all 0.8s ease-in-out;
 		}
 
 		&:hover {
@@ -114,6 +116,11 @@ body {
 			}
 		}
 	}
+}
+
+// for js logic file: navigation.js
+.show {
+	transform: translateX(0%);
 }
 
 .hero {
