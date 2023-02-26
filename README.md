@@ -10,5 +10,5 @@
 
 ## user guide
 
-Link to external web server hosting live view (hostinger): IN PROGRESS
+Link to external web server hosting live view (netlify): https://project-currency-calculator.netlify.app/
 Link to github pages hosting live view: https://thekureq.github.io/Remitly_HomeExercise/
