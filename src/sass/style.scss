@@ -20,6 +20,24 @@ body {
 	overflow: hidden;
 }
 
+.input-error {
+	background-color: $red-color;
+	border-radius: 0.5rem;
+}
+
+.error-animation {
+	animation: 0.2s error cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.error-msg {
+	&--gb {
+		color: $red-color;
+	}
+	&--pl {
+		color: $red-color;
+	}
+}
+
 .nav {
 	position: absolute;
 	top: 0;
@@ -28,7 +46,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	width: 250px;
+	width: 300px;
 	height: auto;
 	min-height: 100vh;
 	padding: 3rem;
@@ -207,6 +225,7 @@ body {
 			padding: 0 4rem;
 			font-family: 'Prompt', sans-serif;
 			border: 0;
+			// text-align: right;
 		}
 
 		img {
@@ -231,25 +250,52 @@ footer {
 @media (min-width: 567px) {
 	.hero {
 		h1 {
-			top: 50%;
+			top: 40%;
 			font-size: 3.6rem;
 		}
 	}
-}
 
-@media (min-height: 850px) {
+	.main {
+		.calculator {
+			width: 400px;
+		}
+	}
+}
+@media (min-height: 750px) {
 	.nav {
 		img {
 			display: block;
 			position: relative;
 			width: 100%;
 			object-fit: cover;
+			object-position: 0 25%;
 			border-radius: 0.5rem;
 			margin-bottom: 2rem;
+			height: 200px;
 		}
 	}
 }
+@media (min-height: 850px) {
+	.hero {
+		h1 {
+			top: 50%;
+			font-size: 3.6rem;
+		}
+	}
 
+	.nav {
+		img {
+			display: block;
+			position: relative;
+			width: 100%;
+			object-fit: cover;
+			object-position: 0 25%;
+			border-radius: 0.5rem;
+			margin-bottom: 2rem;
+			height: 300px;
+		}
+	}
+}
 @keyframes bounce {
 	0% {
 		transform: translateX(-48px);
@@ -278,5 +324,22 @@ footer {
 	100% {
 		transform: translateX(60px);
 		opacity: 0;
+	}
+}
+@keyframes error {
+	0% {
+		transform: translateX(-5px);
+	}
+
+	33% {
+		transform: translateX(0px);
+	}
+
+	66% {
+		transform: translateX(5px);
+	}
+
+	100% {
+		transform: translateX(0px);
 	}
 }

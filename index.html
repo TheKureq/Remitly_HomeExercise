@@ -71,12 +71,12 @@
 
       <!-- UNITED KINGDOM BOX -->
       <div class="calculator__input-text">
-        <p>You send</p>
+        <p>You send <span class="error-msg--gb"></span></p>
       </div>
       <div class="calculator__input-Box">
         <img src="./dist/img/united-kingdom-flag-icon.svg" alt="united kingdom flag small icon">
         <div>
-          <input class="calculator__input-value" type="text" id="en">
+          <input class="calculator__input-value" type="text" id="gb">
         </div>
         <div class="calculator__currency">
           <p>GBP</p>
@@ -85,7 +85,7 @@
 
       <!-- POLAND BOX -->
       <div class="calculator__input-text">
-        <p>They receive</p>
+        <p>They receive <span class="error-msg--pl"></span></p>
       </div>
       <div class="calculator__input-Box">
         <img src="./dist/img/poland-flag-icon.svg" alt="Poland flag small icon">
@@ -99,7 +99,7 @@
 
       <!-- INFO -->
       <div class="calculator__exchange-rate">
-        <p>1 GBP = <span class="exchange-rate"></span></p>
+        <p>1 GBP = <span class="exchange-rate"></span> PLN</p>
         <p><strong>No transfer fee</strong></p>
       </div>
 
@@ -115,9 +115,10 @@
   </p>
 </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script src="./dist/js/main.min.js"></script>
   <script src="./dist/js/navigation.min.js"></script>
-  <script src="https://kit.fontawesome.com/6f008fc73a.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b7e7d61ec1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

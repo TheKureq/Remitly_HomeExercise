@@ -17,7 +17,7 @@ const triggerHandle = () => {
 }
 
 const mainNavJs = () => {
-  nav.classList.toggle('show')
+	triggerHandle()
 	trigger.addEventListener('click', triggerHandle)
 }
 
