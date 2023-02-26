@@ -9,6 +9,8 @@
 5. instal gulp, type: "npm install --global gulp-cli"
 6. run gulp, type: "gulp", live server will run automatically after a few moments
 
+A calculator logic is implemented in ./src/js/main.js
+
 ## User guide
  
 ![image](https://user-images.githubusercontent.com/81649868/221387006-f5c74cc8-e3ae-4456-b7e2-84db839e121f.png)
