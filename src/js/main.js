@@ -4,7 +4,7 @@ let inputPLN = document.getElementById('pl')
 let errMsg_gb = document.querySelector('.error-msg--gb')
 let errMsg_pl = document.querySelector('.error-msg--pl')
 
-const URL_API = 'http://api.nbp.pl/api/exchangerates/rates/a/gbp/?format=json'
+const URL_API = 'https://api.nbp.pl/api/exchangerates/rates/a/gbp/?format=json'
 
 // ==============
 // HELP FUNCTIONS
