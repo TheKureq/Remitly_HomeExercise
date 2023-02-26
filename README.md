@@ -26,12 +26,15 @@ value calculate in real time, exchange rates are real from the NBP Web API
 ### Additional content
 
 * button to show developer info
+
 ![image](https://user-images.githubusercontent.com/81649868/221387092-a1dce12c-05a4-46b5-bee3-28b9f3617c96.png)
 
 * developer info + navigation
+
 ![image](https://user-images.githubusercontent.com/81649868/221387087-7d1bd9d6-dcc2-4a70-909d-7344aa434f9d.png)
 
 * website is fully responsive
+
 ![image](https://user-images.githubusercontent.com/81649868/221387219-3b4895bc-a5cc-4cd6-b7ac-c91a274b73ff.png)
 
 
