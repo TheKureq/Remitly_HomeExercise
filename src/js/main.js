@@ -19,7 +19,7 @@ const getDataFromApi = () => {
 		.catch(err => console.error(err))
 }
 
-const inputHandle = obj => {
+const inputHandle = (obj, func_URL_API) => {
 	// Variables initialization
 	let obj_from = obj
 	let val = obj.value
@@ -47,7 +47,7 @@ const inputHandle = obj => {
 
 			// calculate value to "other input"
 			axios
-				.get(URL_API)
+				.get(func_URL_API)
 				.then(res => {
 					const GBP = res.data.rates[0].mid
 					let rate
@@ -88,12 +88,12 @@ const main = () => {
 
 	// Conversion GBP => PLN
 	inputGBP.addEventListener('input', () => {
-		inputHandle(inputGBP)
+		inputHandle(inputGBP, URL_API)
 	})
 
 	// Conversion PLN => GBP
 	inputPLN.addEventListener('input', () => {
-		inputHandle(inputPLN)
+		inputHandle(inputPLN, URL_API)
 	})
 }
 
