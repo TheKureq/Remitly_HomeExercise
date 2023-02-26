@@ -19,7 +19,7 @@ const getDataFromApi = () => {
 		.catch(err => console.error(err))
 }
 
-const inputHandle = (obj, func_URL_API) => {
+const exchangeHandle = (obj, func_URL_API) => {
 	// Variables initialization
 	let obj_from = obj
 	let val = obj.value
@@ -88,12 +88,12 @@ const main = () => {
 
 	// Conversion GBP => PLN
 	inputGBP.addEventListener('input', () => {
-		inputHandle(inputGBP, URL_API)
+		exchangeHandle(inputGBP, URL_API)
 	})
 
 	// Conversion PLN => GBP
 	inputPLN.addEventListener('input', () => {
-		inputHandle(inputPLN, URL_API)
+		exchangeHandle(inputPLN, URL_API)
 	})
 }
 

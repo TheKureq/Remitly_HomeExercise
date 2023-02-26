@@ -17,7 +17,6 @@ const triggerHandle = () => {
 }
 
 const mainNavJs = () => {
-	triggerHandle()
 	trigger.addEventListener('click', triggerHandle)
 }
 
